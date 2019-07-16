@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/MainToolbar"
+        layout="@layout/toolbar_main"/>
+
+
+    <TextView
+        android:id="@+id/MainHelloTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="60dp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/MainCurrentDataButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="LoadCurrentData"
+        android:text="Current Data"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/MainViewDataButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:onClick="LoadAllData"
+        android:text="View all Data"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
